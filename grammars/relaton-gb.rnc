@@ -16,7 +16,7 @@ element on { ISO8601Date | "--" | "–" }
 
 }
 
-OrganizationType &=
+OrganizationType |=
     technical-committee?, subcommittee?, workgroup?, secretariat?
 
 DocumentType = "standard" | "recommendation"
