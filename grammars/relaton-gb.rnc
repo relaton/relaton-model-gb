@@ -16,8 +16,6 @@ element on { ISO8601Date | "--" | "–" }
 
 }
 
-organization = element organization { OrganizationType | IsoOrganizationType }
-
 DocumentType = "standard" | "recommendation"
 
 DocumentSubtype = "specification" | "method-of-test" | "vocabulary" | "code-of-practice"
@@ -94,5 +92,3 @@ gbmandate = element gbmandate { ( "mandatory" | "recommended" | "guidelines" ) }
 gbprefix = element gbprefix { text }
 gbtopic = element gbtopic { "basic" | "health-and-safety" | "environment-protection" | "engineering-and-construction" | "product" | "method" | "management-techniques" | "other" }
 
-IsoOrganizationType =
-    technical-committee?, subcommittee?, workgroup?, secretariat?
