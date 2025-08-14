@@ -26,6 +26,8 @@ structuredidentifier =
     (documentnumber, tc-documentnumber? )
 }
 
+}
+
 updates_document_type = element updates-document-type { DocumentType }
 
 horizontal = element horizontal { xsd:boolean }
