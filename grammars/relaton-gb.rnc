@@ -24,7 +24,7 @@ structuredidentifier =
 
 }
 
-BibDataExtensionType =
+BibDataExtensionType &=
     stagename?, gbtype, gbccs+, gbplannumber?
 
 updates_document_type = element updates-document-type { DocumentType }
