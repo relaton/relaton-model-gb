@@ -1,9 +1,5 @@
 include "biblio-standoc.rnc" {
 
-BibDataExtensionType =
-  attribute schema-version { text }?,
-    doctype?, docsubtype?, ics*, structuredidentifier, stagename?, gbtype, gbccs+, gbplannumber?
-
 bdate = element date {
   attribute type { ( BibliographicDateType | text ) },
   (
@@ -27,6 +23,9 @@ structuredidentifier =
 }
 
 }
+
+BibDataExtensionType =
+    stagename?, gbtype, gbccs+, gbplannumber?
 
 updates_document_type = element updates-document-type { DocumentType }
 
